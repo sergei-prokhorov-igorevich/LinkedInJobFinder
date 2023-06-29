@@ -1,0 +1,27 @@
+{
+  "name": "linkedinjobfinder",
+  "version": "1.0.0",
+  "description": "It's simple demo of bot application",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "run": "ts-node --esm src/index.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergei-prokhorov-igorevich/LinkedInJobFinder.git"
+  },
+  "author": "Sergei Prokhorov",
+  "bugs": {
+    "url": "https://github.com/sergei-prokhorov-igorevich/LinkedInJobFinder/issues"
+  },
+  "homepage": "https://github.com/sergei-prokhorov-igorevich/LinkedInJobFinder#readme",
+  "dependencies": {
+    "axios": "^1.4.0",
+    "playwright": "^1.35.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.1",
+    "tslib": "^2.5.3"
+  }
+}
