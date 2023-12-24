@@ -4,10 +4,19 @@ import { TApp } from '../../types/TApp.ts';
 import { TConfig } from '../../types/TConfig.ts';
 import { TConfigArgs } from '../../types/TConfigArgs.ts';
 import { toISOLocal } from '../dateUtils.ts';
-import { anastasiiaConfig } from './anastasiiaConfig.ts';
+import { anastasiiaPMConfig } from './anastasiiaPMConfig.ts';
+import { anastasiiaPythonConfig } from './anastasiiaPythonConfig.ts';
 import { sergeiConfig } from './sergeiConfig.ts';
 
 let config: TConfig;
+
+function mapConfig(personConfig){
+  switch(personConfig) {
+    case EPersonConfig.Sergei: return sergeiConfig;
+    case EPersonConfig.AnastasiaPython: return anastasiiaPythonConfig;
+    case EPersonConfig.AnastasiaPM: return anastasiiaPMConfig;
+  }
+}
 
 function initConfig(args: TConfigArgs): void {
   const app: TApp = {
@@ -19,7 +28,7 @@ function initConfig(args: TConfigArgs): void {
 
   config = {
     app: app,
-    currentPersonConfig: args.personConfig === EPersonConfig.SERGEI ? sergeiConfig : anastasiiaConfig,
+    currentPersonConfig: mapConfig(args.personConfig),
   };
 }
 

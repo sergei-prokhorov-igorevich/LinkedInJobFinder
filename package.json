@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "description": "It's simple demo of bot application",
   "main": "src/index.ts",
-  "type": "module",
   "scripts": {
-    "run": "ts-node --esm src/index.ts"
+    "run": "ts-node src/index.ts"
   },
   "repository": {
     "type": "git",

@@ -6,7 +6,7 @@ import { commitStorage } from './singleton/storage.ts';
 import { TConfigArgs } from './types/TConfigArgs.ts';
 
 const consoleTimeLabel = 'Elapsed';
-const initConfigData: TConfigArgs = { personConfig: EPersonConfig.ANASTASIIA };
+const initConfigData: TConfigArgs = { personConfig: EPersonConfig.AnastasiaPM };
 
 (async () => {
   console.time(consoleTimeLabel);

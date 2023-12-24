@@ -2,7 +2,7 @@ import { ELang } from '../../enums/ELang.ts';
 import { anastasiiaTelegramChatId } from '../../telegramBot/secret.ts';
 import { TPersonalConfig } from '../../types/TPersonalConfig.ts';
 
-const anastasiiaConfig: TPersonalConfig = {
+const anastasiiaPythonConfig: TPersonalConfig = {
   regions: [
     {
       name: 'Russia',
@@ -57,7 +57,7 @@ const anastasiiaConfig: TPersonalConfig = {
   ],
   telegramChatId: anastasiiaTelegramChatId, // sergeiTelegramChatId
   lang: ELang.RU,
-  storageFileName: 'anastasiiaStorage.json',
+  storageFileName: 'anastasiiaPythonStorage.json',
 };
 
-export { anastasiiaConfig };
+export { anastasiiaPythonConfig };

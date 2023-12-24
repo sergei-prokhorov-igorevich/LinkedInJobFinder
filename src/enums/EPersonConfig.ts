@@ -1,5 +1,6 @@
 enum EPersonConfig {
-  SERGEI,
-  ANASTASIIA,
+  Sergei,
+  AnastasiaPython,
+  AnastasiaPM
 }
 export { EPersonConfig };
